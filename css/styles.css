@@ -386,9 +386,13 @@ body {
 }
 
 .picture-description {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+
   font-family: Roboto;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
   text-align: center;
@@ -396,6 +400,13 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   background-color: rgba(47, 48, 58, 0.8);
+}
+
+.description1 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
 }
 
 .button {
@@ -593,6 +604,35 @@ body {
 .social-item {
   width: 44px;
   height: 44px;
+}
+
+.backdrop {
+  position: fixed;
+  width: 100vw;
+  height: 100vw;
+  background-color: rgba(255, 255, 255, 0.6);
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.backdrop-icon {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  padding-top: 8px;
+  padding-right: 8px;
+}
+.modal {
+  position: relative;
+  width: 528px;
+  height: 581px;
+
+  background-color: #ffffff;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
 }
 
 /* css для портфолио */
