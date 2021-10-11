@@ -51,7 +51,7 @@
         <section class="hero">
             <div class="container">
             <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br/> ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-            <button class="button primary" type="button">Заказать услугу</button>
+            <button data-modal-open class="button primary" type="button">Заказать услугу</button>
             </div>
 
         </section>
@@ -123,13 +123,11 @@
             <div class="picture-description">
             <img  src="./images/picture2.png" alt="tablet" width="370" />
             <h2 class="description1">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</h2>
-         
             </li>
             <li class="pictures">
             <div class="picture-description">
             <img src="./images/picture3.png" alt="tablet" width="370" />
-            
-                <h2 class="description1">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</h2>
+            <h2 class="description1">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</h2>
             </div>
             </li>
           
@@ -417,17 +415,21 @@
     </div>
     </div>
     </footer>
-    <div class="backdrop">
+
+
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-           
-            <svg class="backdrop-icon">
-                <use href="./images/sprite.svg#icon-krest-2">
-                </use>
-            </svg>
+
+            <button data-modal-close>
+                <svg class="backdrop-icon">
+                    <use href="./images/sprite.svg#icon-krest-2">
+                    </use>
+                </svg>
+            </button>
         </div>
 
     </div>
-
+    <script src="./js/modal.js"></script>
 
 </body>
 
